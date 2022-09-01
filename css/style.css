@@ -42,6 +42,37 @@ body.active{
     padding-left:  35rem;
 }
 
+section{
+    padding: 3rem 2rem;
+    margin: 0 auto;
+    max-width: 1200px;
+    text-align: center;
+}
+
+.heading{
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.heading span{
+    text-transform: uppercase;
+    font-size: 6.5rem;
+    border-bottom: black;
+}
+.btn{
+    display: inline-block;
+    margin-top: 1rem;
+    cursor: pointer;
+    padding: 1rem 3rem;
+    background-color: lightsteelblue;
+    font-size: 2rem;
+}
+
+.btn:hover{
+    background-color: darkslategray;
+    color: bisque;
+}
+
 .header{
     position: fixed;
     top: 0; left: -35rem;
@@ -61,7 +92,7 @@ body.active{
 
 .header .logo{
     text-transform: uppercase;
-    border-bottom: darkslategrey;
+    border-bottom: black;
     font-weight: bolder;
     font-size: 4.5rem;
 }
@@ -108,5 +139,163 @@ body.active{
 
 .header.active{
     left: 0;
+}
+
+.home{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    min-height: 100vh;
+}
+
+.home .image img{
+    height: 65rem;
+    padding: 2rem;
+    border: black;
+}
+
+.home .content{
+    flex: 1 1 40rem;
+}
+
+.home .content h3{
+    text-transform: uppercase;
+    font-size: 5rem;
+    margin-bottom: .5rem;
+}
+
+.home .content span{
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: lightsteelblue;
+    font-size: 2rem;
+    margin: 1rem 0;
+}
+
+.home .content p{
+    font-size: 1.8rem;
+    line-height: 2;
+    padding: 1rem 0;
+}
+
+.about .biography p{
+    margin: 1rem auto;
+    max-width: 70rem;
+    line-height: 1.5;
+    font-size: 1.7rem;
+}
+
+.about .biography .bio{
+    margin-top: 1rem;
+}
+
+.about .biography .bio h3{
+    padding: 1rem 2rem;
+    display: inline-block;
+    margin: 1rem;
+    background-color: lightsteelblue;
+    border: black;
+    word-break: break-all;
+    font-size: 2.5rem;
+    font-weight: normal;
+    text-transform: none;
+}
+.about .biography .bio h3 span{
+    font-weight: lighter;
+}
+
+.about .skills{
+    margin: 3rem 0;
+}
+.about .skills .progress{
+    margin-top: 1rem;
+}
+.about .skills .progress .bar{
+    margin: 1rem auto;
+    max-width: 70rem;
+    border: black;
+    padding: 1rem;
+}
+
+.about .skills .progress .bar h3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 2rem;
+    padding: 2rem;
+    background-color: crimson;
+}
+
+.about .skills .progress .bar span{
+  font-weight: normal;
+}
+
+.about .skills .progress .bar:nth-child(1) h3{
+    width: 95%;   
+}
+
+.about .skills .progress .bar:nth-child(2) h3{
+    width: 80%;   
+}
+
+.about .skills .progress .bar:nth-child(3) h3{
+    width: 65%;   
+}
+
+.about .skills .progress .bar:nth-child(4) h3{
+    width: 95%;   
+}
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;
+    }
+
+    body.active{
+        padding-left: 0;
+    }
+
+}
+
+@media (max-width:450px){
+
+    html{
+        font-size: 50%;
+    }
+
+    .header{
+        padding-top: 7rem;
+    }
+
+    #menu-btn.fa-times{
+        right: 0;
+    }
+
+    .home .image img{
+         height: auto;
+         width: 100%;
+    }
+
+    .heading span{
+        font-size: 4rem;
+    }
+
+    .about .biography .bio h3{
+        font-size: 2rem;
+    }
+
+
 }
  
