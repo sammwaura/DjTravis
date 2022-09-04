@@ -246,6 +246,41 @@ section{
 .about .skills .progress .bar:nth-child(4) h3{
     width: 95%;   
 }
+.about .experience .row{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem; 
+}
+.about .experience .row .box-container{
+    flex: 1 1 40rem;
+}
+
+.about .experience .row .box-container .title{
+    padding: 1.5rem;
+    font-size: 2rem;
+    background-color: crimson;
+}
+.about .experience .row .box-container .box{
+    text-align: left;
+    margin: 1.5rem 0;
+    background-color: lightsteelblue;
+    padding: 2rem;
+}
+.about .experience .row .box-container .box span{
+    font-size: 2rem;
+}
+.about .experience .row .box-container .box h3{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.about .experience .row .box-container .box ul li{
+    line-height: 1.5;
+    font-size: 2rem;  
+}
+
+
 
 
 
